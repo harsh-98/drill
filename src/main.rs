@@ -1,14 +1,4 @@
-mod actions;
-mod benchmark;
-mod checker;
-mod config;
-mod expandable;
-mod interpolator;
-mod reader;
-mod tags;
-mod writer;
-
-use crate::actions::Report;
+use drill::{actions::Report, tags, benchmark, checker};
 use clap::crate_version;
 use clap::{App, Arg};
 use colored::*;
